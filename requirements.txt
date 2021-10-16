@@ -1,4 +1,4 @@
-Flask
 gunicorn
+Flask
 uuid
 requests
