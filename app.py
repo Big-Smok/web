@@ -41,4 +41,4 @@ def Home():
         return jsonify(result="false",user=user,password=Pess,by="@Kaero7 and @eccee8")
 
 
-app.run(host="0.0.0.0",port=int(os.environ.get("PORT",5000)))
+app.run()
