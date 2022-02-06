@@ -1,4 +1,4 @@
-import flask
+import flask,os
 from flask import jsonify
 import requests
 from uuid import uuid4
@@ -41,4 +41,4 @@ def Home():
         return jsonify(result="false",user=user,password=Pess,by="@Kaero7 and @eccee8")
 
 
-app.run()
+app.run(host="0.0.0.0",port=int(os.environ.get("PORT",5000)))
